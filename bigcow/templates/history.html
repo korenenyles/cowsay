@@ -1,8 +1,10 @@
-history
-
-{%for cow in cow_history%}
-    <pre>{{cow}}</pre>
-{% endfor %}
-
+<h1>History</h1>
 
 <pre>{{cow}}</pre>
+<ul>
+{%for cow in cow_history%}
+    <li><pre>{{cow}}</pre></li>
+{% endfor %}
+</ul>
+
+<a href = {% url 'home'  %}> <button>Home</button></a>

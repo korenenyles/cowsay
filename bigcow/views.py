@@ -35,11 +35,11 @@ def history(request):
         
     cow_history = cow_history[-10:]
     cow_history.reverse()
-    
+    cow = cow_words('Our Last 10 Cows said:')
     
 
         
         
     
 
-    return render(request, 'history.html', {"cow_history":cow_history })
+    return render(request, 'history.html', {"cow_history":cow_history, "cow":cow })

@@ -1,5 +1,11 @@
-<h1>Cowsay </h1>
-<a href= "{% url 'history' %}"><button>History</button></a>
+<html>
+<head>
+</head>
+
+
+<body>
+<h1>Cowsay, What?!</h1>
+<a href= "{% url 'history' %}"><button>Our Previous Cows</button></a> | <a href= "{% url 'home' %}"><button>Say Something Else</button></a>
 
 
 <form action="" method="post">
@@ -9,3 +15,5 @@
 </form>
 
 <pre>{{cowput}}</pre>
+</body>
+</html>
